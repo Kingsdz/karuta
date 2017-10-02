@@ -1,3 +1,7 @@
+<style>
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+</style>  
+
 <template>
   <div id="app">
     <img src="./assets/logo.png">
