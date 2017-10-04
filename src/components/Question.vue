@@ -62,7 +62,7 @@ export default {
   .highlight {
     padding: 0.5em;
     margin: 1em 0;
-    background-color: #f7f7f9;
+    background-color: #f8f9fa;
   }
 
   audio {

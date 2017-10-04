@@ -49,24 +49,10 @@ export default {
   .highlight {
     padding: 0.5em;
     margin-top: 0.5em;
-    background-color: #f7f7f9;
+    background-color: #f8f9fa;
   }
 
   h1, h2 {
     font-weight: normal;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
   }
 </style>
