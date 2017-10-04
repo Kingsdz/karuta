@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="row">
-        <button class="btn mr-auto" type="button" v-on:click="previous">Previous</button>
-        <button class="btn" type="button" v-on:click="next">Next</button>
-      </div>
-      <div class="row">
-        <div class="highlight rounded">
-          {{index+1}} / {{questions.length}}
-        </div>
-      </div>
-      <question v-if="questions.length > 0" :slQuestion="questions[index]"></question>
+  <div class="container">
+    <div class="row">
+      <button class="btn mr-auto" type="button" v-on:click="previous">Previous</button>
+      <button class="btn" type="button" v-on:click="next">Next</button>
     </div>
+    <div class="row">
+      <div class="highlight rounded">
+        {{index+1}} / {{questions.length}}
+      </div>
+    </div>
+    <question v-if="questions.length > 0" :slQuestion="questions[index]"></question>
   </div>
 </template>
 
@@ -49,24 +47,10 @@ export default {
   .highlight {
     padding: 0.5em;
     margin-top: 0.5em;
-    background-color: #f7f7f9;
+    background-color: #f8f9fa;
   }
 
   h1, h2 {
     font-weight: normal;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
   }
 </style>
