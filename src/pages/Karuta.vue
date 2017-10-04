@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="row">
-      <button class="btn mr-auto" type="button" v-on:click="previous">Previous</button>
-      <button class="btn" type="button" v-on:click="next">Next</button>
+      <button class="btn btn-success mr-auto" type="button" v-on:click="previous">Previous</button>
+      <button class="btn btn-success" type="button" v-on:click="next">Next</button>
     </div>
     <div class="row">
       <div class="highlight rounded">
