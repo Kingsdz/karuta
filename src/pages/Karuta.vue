@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="row">
-        <button class="btn mr-auto" type="button" v-on:click="previous">Previous</button>
-        <button class="btn" type="button" v-on:click="next">Next</button>
-      </div>
-      <div class="row">
-        <div class="highlight rounded">
-          {{index+1}} / {{questions.length}}
-        </div>
-      </div>
-      <question v-if="questions.length > 0" :slQuestion="questions[index]"></question>
+  <div class="container">
+    <div class="row">
+      <button class="btn mr-auto" type="button" v-on:click="previous">Previous</button>
+      <button class="btn" type="button" v-on:click="next">Next</button>
     </div>
+    <div class="row">
+      <div class="highlight rounded">
+        {{index+1}} / {{questions.length}}
+      </div>
+    </div>
+    <question v-if="questions.length > 0" :slQuestion="questions[index]"></question>
   </div>
 </template>
 

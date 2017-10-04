@@ -12,7 +12,7 @@
     <div class="row justify-content-center button-control">
       <button class="btn" type="button" v-on:click="answerControl">{{btnText}}</button>
     </div>
-    <div class="row" v-if="isShowImage">
+    <div class="row img-row" v-if="isShowImage">
       <div class="img-answer">
         <img :src="slQuestion.image" class="rounded mx-auto d-block" :alt="slQuestion.answer">
         <div class="img-title">{{slQuestion.answer}}</div>
@@ -77,11 +77,17 @@ export default {
     width: 200px;
     height: 200px;
   }
+
   .img-answer {
     margin: 0 auto;
   }
+
   .img-title {
     margin-top: 5px;
     text-align: center;
+  }
+
+  .img-row {
+    margin-bottom: 15px;
   }
 </style>
