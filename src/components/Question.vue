@@ -10,7 +10,7 @@
       </audio>
     </div>
     <div class="row justify-content-center button-control">
-      <button class="btn" type="button" v-on:click="answerControl">{{btnText}}</button>
+      <button class="btn btn-color-default" type="button" v-on:click="answerControl">{{btnText}}</button>
     </div>
     <div class="row img-row" v-if="isShowImage">
       <div class="img-answer">
@@ -71,6 +71,11 @@ export default {
 
   .button-control {
     margin: 1em 0;
+  }
+
+  .btn-color-default {
+    background-color: #dddddd;
+    border-color: #dddddd;
   }
 
   img {
