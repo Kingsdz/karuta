@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar fixed-top">
     <a class="navbar-brand" href="#">
-      <img src="../assets/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="amazon web services Viet Nam">
+      <img src="../assets/logo.png" height="30" class="d-inline-block align-top" alt="amazon web services Viet Nam">
       {{title}}
     </a>
   </nav>
@@ -12,7 +12,7 @@ export default {
   name: 'nav-bar',
   data () {
     return {
-      title: 'Amazon web services Vietnam'
+      title: 'Amazon Web Services Vietnam - UG'
     }
   }
 }

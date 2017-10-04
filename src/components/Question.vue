@@ -91,8 +91,4 @@ export default {
     margin-top: 5px;
     text-align: center;
   }
-
-  .img-row {
-    margin-bottom: 15px;
-  }
 </style>
