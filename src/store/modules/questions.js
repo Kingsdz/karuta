@@ -13,10 +13,10 @@ const getters = {
 
 // actions
 const actions = {
-  getAllQuestions ({ commit }) {
+  getAllQuestions ({ commit }, params) {
     question.getQuestions(questions => {
       commit(types.RECEIVE_QUESTIONS, { questions })
-    })
+    }, params)
   }
 }
 

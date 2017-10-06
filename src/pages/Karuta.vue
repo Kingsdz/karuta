@@ -38,7 +38,11 @@ export default {
     }
   },
   created () {
-    this.$store.dispatch('getAllQuestions')
+    let params = {
+      package: this.$route.params.package || 'default',
+      number: this.$route.params.number || 'all'
+    }
+    this.$store.dispatch('getAllQuestions', params)
   }
 }
 </script>
