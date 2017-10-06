@@ -13,9 +13,9 @@
             </ul>
           </div>
           <div class="panel-footer">
-              <button type="button" class="btn btn-success" v-on:click="gotoPackage(20)">20</button>
-              <button type="button" class="btn btn-warning" v-on:click="gotoPackage(40)">40</button>
-              <button type="button" class="btn btn-danger" v-on:click="gotoPackage(60)">60</button>
+              <button type="button" class="btn btn-success" v-on:click="$_gotoPackage(20)">20</button>
+              <button type="button" class="btn btn-warning" v-on:click="$_gotoPackage(40)">40</button>
+              <button type="button" class="btn btn-danger" v-on:click="$_gotoPackage(60)">60</button>
           </div>
       </div>
   </div>
@@ -46,7 +46,7 @@ const packages = {
 }
 
 export default {
-  name: 'package',
+  name: 'question-package',
   data () {
     return {
       packages
@@ -54,7 +54,7 @@ export default {
   },
   props: ['slPackage'],
   methods: {
-    gotoPackage: function (num) {
+    $_gotoPackage: function (num) {
       this.$router.push({ path: `/karuta/${this.slPackage}/${num}` })
     }
   }

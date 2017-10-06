@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'nav-bar',
+  name: 'the-header',
   data () {
     return {
       title: 'AWS Vietnam - UG'

@@ -10,7 +10,7 @@
       </audio>
     </div>
     <div class="row justify-content-center button-control">
-      <button class="btn btn-color-default" type="button" v-on:click="answerControl">{{btnText}}</button>
+      <button class="btn btn-color-default" type="button" v-on:click="$_answerControl">{{btnText}}</button>
     </div>
     <div class="row img-row" v-if="isShowImage">
       <div class="img-answer">
@@ -27,7 +27,7 @@ const _textShow = 'Click to show Answer'
 const _textHide = 'Click to hide Answer'
 
 export default {
-  name: 'question',
+  name: 'question-item',
   props: {
     slQuestion: {
       type: Object
@@ -40,7 +40,7 @@ export default {
     }
   },
   methods: {
-    answerControl: function (event) {
+    $_answerControl: function (event) {
       this.isShowImage = !this.isShowImage
       if (this.isShowImage) {
         this.btnText = _textHide

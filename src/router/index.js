@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Karuta from '@/pages/Karuta'
-import Home from '@/pages/Home'
+import KarutaPage from '@/pages/KarutaPage'
+import HomePage from '@/pages/HomePage'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [
-    { path: '/', component: Home },
-    { path: '/karuta/', component: Karuta },
-    { path: '/karuta/:package/:number', component: Karuta }
+    { path: '/', component: HomePage },
+    { path: '/karuta/', component: KarutaPage },
+    { path: '/karuta/:package/:number', component: KarutaPage }
   ]
 })
